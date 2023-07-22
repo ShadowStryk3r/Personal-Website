@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vishal Sundaram</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div id="topnav">
+    <a  id = "home-btn" class="active"  onclick = "highlight('home')" href="#home">Home</a>
+    <a  id = "about-btn" onclick = "highlight('about')" href = "#about">About</a>
+    <a  id = "projects-btn"  onclick = "highlight('projects')"href = "#projects">Projects</a>
+    <a  id = "blog-btn"  onclick = "highlight('blog')" href = "#blog">Blog</a>
+    <a  id = "contact-btn"  onclick = "highlight('contact')" href = "#contact">Contact</a>
+  </div>
+  <!-- particles.js container -->
+  <section id = "home">
+  <div id = "title-container">
+    <h1 id="title"></h1>
+    <a href = "#contact"><img id = "down-arrow" src = "down-arrow1.png" alt = "down"></a>
+  </section>
+  </div>
+    <div id = "aboutcontainer">
+      <section id = "about">
+        <h1 class = "subheading">About Me</h1>
+        <div id = "image-desc">
+          <div id = "image">
+            <img  id = "profile-image"src = "Shadow Stryk3r (1).png" alt = "Image of Vishal"/>
+          </div>
+          <p id = "description">
+            I'm a Junior in High School. I have interests for Computer Science, Chemistry, Math, and Physics. Some more placeholder text because I can't think  of anything else to put here right now. Elkins High School is a school, with students. Sports exist in the world which is crazy.
+          </p>
+        </div>
+        <div id = "prof-skills">
+          <div id = "profile">
+            <h1  id = "prof"class = "subheading">
+              Profile
+            </h1>
+            <p id = "desc">
+              Here is some more text that I don't really know how to fill so here it is anyways. I am a junior at Lawrence E. Elkins High School. I'm open to any internship oppurtunities. Some more text here because I dont know what to put here. Fill in this area with more useful information later.
+            </p>
+            <div class = "small-heading">
+              FULL NAME:
+            </div>
+            <p>Vishal Nagappan Sundaram</p>
+            <div class = "small-heading">
+              BIRTH DATE
+            </div>
+            <p>January 18, 2008</p>
+            <div class = "small-heading">
+              EMAIL
+            </div>
+            <p>vishalsundaram@outlook.com</p>
+          </div>
+          <div id = "skills">
+            <h1 id = "ski"class = "subheading">
+              Skills
+            </h1>
+            <p id = "skill-desc">
+              I have lots of experience both in independent projects as well as leading large groups in various clubs and organizations around the fields of technology.I am strong in chemistry, and computer science fields with Data Analytics, Leadership, and Bioinformatics experience. Here are some of the highlights in my skillset;
+            </p>
+            <h2 class = "skill">
+              Problem Solving: 90%
+            </h2>
+            <progress class = "skillbar"value = "90" max = "100">90%</progress>
+            <h2 class = "skill">
+              Competetive Programming: 70%
+            </h2>
+            <progress class = "skillbar"value = "70" max = "100">70%</progress>
+            <h2 class = "skill">
+              Web Development: 70%
+            </h2>
+            <progress class = "skillbar"value = "70" max = "100">90%</progress>
+            <h2 class = "skill">
+              Game Development: 60%
+            </h2>
+            <progress class = "skillbar"value = "60" max = "100">60%</progress>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id = "projects-container">
+      <section id = "projects">
+        <h1 id = "project-head"class = "subheading">
+          Projects
+        </h1>
+        <p class = "projdesc">
+          Take a look at some of my projects.
+        </p>
+        <div onmouseover = "showdesc('per-web', 'one')"  onmouseleave="hidedesc('per-web', 'one')" id = "personal-website" class = "project">
+          <div id = "per-web">
+            <p id = "one"class = "proj-desc">
+              My Personal Website
+            </p>
+          </div>
+        </div>
+        <div onmouseover = "showdesc('game', 'two')"  onmouseleave="hidedesc('game', 'two')" id = "overgrown"class = "project">
+          <div id = "game">
+            <p id = "two" class = "proj-desc">
+              Overgrown
+            </p>
+          </div>
+        </div>
+        <div onmouseover = "showdesc('gen', 'three')"  onmouseleave="hidedesc('gen', 'three')" id = "general-science" class = "project">
+          <div id = "gen">
+            <p id = "three" class = "proj-desc">
+              Curriculum for UIL General Science
+            </p>
+          </div>
+        </div>
+        <div onmouseover = "showdesc('blog-proj', 'four')"  onmouseleave="hidedesc('blog-proj', 'four')" id = "blogger"class = "project">
+          <div id = "blog-proj">
+            <p id = "four" class = "proj-desc">
+              My Blog (WIP)
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id = "blog">
+      <h1 id = "bloghead" class = "subheading">
+        Blog
+      </h1>
+      <p id = "blog-desc">
+        Check out my Blog on interesting science, math, logic, and computer science lessons.
+      </p>
+      <button class="button-28" role="button" id = "viewblog">
+        View My Blog
+      </button>
+    </section>
+    <section id = "contact">
+      <h1 id = "cnt" class = "subheading">
+        Contact
+      </h1>
+      <p id = "contact-p">
+        I'd love to connect with you.
+      </p>
+      <img id = "link" class = "contact-img" alt = "linkedin" src = "linkedin.png">
+      <img id = "git" class = "contact-img" alt = "github" src = "github.png">
+      <img href = "mailto:vishalsundaram@outlook.com" id = "mail" class = "contact-img" alt = "gmail" src = "gmail.png"> 
+    </section>
+  <script src="../particles.js"></script>
+  <script src="../demo/js/index.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
