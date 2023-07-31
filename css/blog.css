@@ -1,0 +1,46 @@
+#topnav {
+    z-index: 10;
+    position: fixed;
+    width:100%;
+    top: 0px;
+    left:0px;
+    background-color: rgb(31, 41, 48);
+    min-height: 5vh;
+    overflow: hidden;
+  }
+  #topnav a {
+    float: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2vh;
+    text-decoration: none;
+    font-size: 2vh;
+    transition: transform .2s;
+  }
+  #topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+  }
+  .active {
+    background-color: #3b586b;
+    color: white;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+#blogintro{
+    width:100%;
+    height: 100%;
+    
+}
